@@ -13,12 +13,16 @@ import CaptainProtectedWrapper from '../ProtectedWrapper/CaptainProtectedWrapper
 import CaptainLogout from './pages/CaptainLogout'
 import Riding from './pages/Riding'
 import CaptainRiding from './pages/CaptainRiding'
+import NotFound from './pages/NotFound'
 
 
 function App() {
   return (
     <div>
       <Routes>
+
+        <Route path="*" element={<NotFound />} />
+
         <Route path='/' element={<Start />} />
         <Route path='/users/Login' element={<UserLogin />} />
         <Route path='/users/Signup' element={<UserSignup />} />
@@ -31,7 +35,7 @@ function App() {
         <Route path='/Captain/Login' element={<CaptainLogin />} />
         <Route path='/captain-home' element={<CaptainProtectedWrapper> <CaptainHome /> </CaptainProtectedWrapper>} />
         <Route path='/Captain-Riding' element={<CaptainProtectedWrapper><CaptainRiding /></CaptainProtectedWrapper>} />
-        <Route path='/Captainlogout' element={<CaptainLogout />}/>
+        <Route path='/Captainlogout' element={<CaptainLogout />} />
       </Routes> </div>
   )
 }

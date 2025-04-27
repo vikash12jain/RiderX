@@ -27,9 +27,7 @@ const MapComponent = () => {
         tap: true,
       }).setView([0, 0], 15);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors',
-      }).addTo(mapRef.current);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapRef.current);
     }
 
     // Location update logic
@@ -54,9 +52,9 @@ const MapComponent = () => {
               circleRef.current.setLatLng([latitude, longitude]);
             } else {
               circleRef.current = L.circle([latitude, longitude], {
-                radius: 100,
-                color:'transparent',
-                fillOpacity: 0,
+                radius: 280,
+                color:'blue',
+                fillOpacity: 0.1,
               }).addTo(mapRef.current);
             }
 

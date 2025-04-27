@@ -1,6 +1,6 @@
 const axios = require('axios');
 const captainModel = require('../Model/Captain.model')
-module.exports.getAddressCoordinateOLD = async (address) => {
+module.exports.getAddressCoordinate = async (address) => {
     if (!address) {
         throw Error(error, "Address is required");
         return
@@ -26,7 +26,7 @@ module.exports.getAddressCoordinateOLD = async (address) => {
 
     }
 }
-module.exports.getAddressCoordinate = async (address) => {
+module.exports.getAddressCoordinateNew = async (address) => {
     if (!address) {
         throw Error(error, "Address is required");
         return
