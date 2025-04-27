@@ -1,6 +1,6 @@
-# Ridex X - A Ride Sharing App
+# Rider X - A Ride Sharing App
 
-**Ridex X**  is a real-time ride-sharing app that helps connect riders and drivers smoothly and quickly. I built this full-stack project using the MERN stack and spent about 1.5 months bringing it to life. With Socket.io integrated, users and drivers can communicate instantly, making the whole experience faster and more interactive
+**Rider X**  is a real-time ride-sharing app that helps connect Riders and drivers smoothly and quickly. I built this full-stack project using the MERN stack and spent about 1.5 months bringing it to life. With Socket.io integrated, users and drivers can communicate instantly, making the whole experience faster and more interactive
 
 ## 📸 Preview
 
@@ -37,7 +37,7 @@
 
 
 ## Features:
-- **Real-time Communication**: Instant updates and seamless communication between riders and drivers.
+- **Real-time Communication**: Instant updates and seamless communication between Riders and drivers.
 - **Ride Requests**: Users can request rides, and drivers can accept them in real-time.
 - **Driver Status Updates**: Drivers can update their status, ensuring accurate ride tracking.
 - **User Profile Management**: Riders and drivers can manage their profiles with ease.
@@ -61,7 +61,7 @@ To run this project locally, follow these steps:
 2. **Navigate into the project directory:**
 
    ```bash
-   cd ridex-x
+   cd Rider-x
 
 3. **Install dependencies:**
 
